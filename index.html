@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Техномарт</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Cuprum:400,700,400italic&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+	  
+</head>
+<body>
+	<header>
+		<div class="head-bar clearfix">
+			<div class="container">
+				<div class="head-logo">
+					<a href="/"><img src="img/logo-header.jpg"></a>
+				</div>
+				<form method="post" name="search" class="search">
+				<input type="text" name="input-search" placeholder="Поиск:">
+				<label class="icon-search"></label>
+				</form>
+				<a href="#" class="head-btn btn-checkout">Оформить заказ</a>
+				<a href="#" class="head-btn btn-basket">Корзина:0</a>
+				<a href="#" class="head-btn btn-bookmark">Закладки:0</a>
+			</div>
+		</div>
+		<div class="container">
+			<p>Интернет-магазин строительных материалов и инстументов для ремонта</p>
+			<div class="head-contacts">
+				<span class="head-tel">+7 (495) 555-05-55</span>
+				<span class="head-adress">Москва, ул. Строителей, д. 15</span>
+			</div>
+			<div class="head-buttons">
+				<div class="login-user-block" id="loginUserBlock">
+					<div class="login-user">
+					    <span id="loginUser"></span>
+					    <a href="#" class="login-user-quit"></a>
+					</div>
+					<a href="#" class="btn-menu-order">Мои заказы</a>
+					<a href="#" class="btn-menu-cabinet">Личный кабинет</a>
+					
+				</div>
+				<div class="no-login-user-block" id="no-loginUserBlock">
+					<a href="#" class="head-btn btn-login">Войти</a>
+					<a href="#" class="head-btn btn-registration">Регистрация</a>
+				</div>
+			</div>
+			
+			<div class="nav-bar">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Компания</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Спецпредложение</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</header>
+	<section class="main-promo">
+		<div class="container">
+			<div class="main-promo-item matherials new-item">
+				<p>Материалы</p>
+				<a href="#" class="btn-item">На любой вкус</a>
+			</div>
+			<div class="main-promo-item instruments">
+				<p>Инструмент</p>
+				<a href="#" class="btn-item">На все случаи</a>
+			</div>
+			<div class="main-promo-item techniks">
+				<p>Техника</p>
+				<a href="#" class="btn-item">Для стройки</a>
+			</div>
+			<div class="main-slides">
+				<ul class='slidewrapper' data-current=0>
+					<li class='slide first'>
+									<h3>Дрели</h3>
+									<p>Соседям на радость</p>
+									<a href="#" class="btn-red">Открыть каталог</a>
+					</li>
+					<li class='slide second'>
+									<h3>Сверла</h3>
+									<p>Соседям на грусть</p>
+									<a href="#" class="btn-red">Открыть каталог</a>
+					</li>
+					<li class='slide third'>
+									<h3>Пилы</h3>
+									<p>Соседям на грусть</p>
+									<a href="#" class="btn-red">Открыть каталог</a>
+					</li>
+					<li class='slide fourth'>
+									<h3>Свиньи</h3>
+									<p>Соседям на грусть</p>
+									<a href="#" class="btn-red">Открыть каталог</a>
+					</li>
+				</ul>				
+				<a href='#' id='prev_slide' class='prev-slide'></a>
+				<a href='#' id='next_slide' class='next-slide'></a>
+            	<input type="radio" name="slides" class="slides" id="slide-first" checked="checked">
+				<input type="radio" name="slides" class="slides" id="slide-second">
+				<input type="radio" name="slides" class="slides" id="slide-third">
+				<input type="radio" name="slides" class="slides" id="slide-fourth">
+
+				<div class="check-slides">
+					<label for="slide-first"></label>
+					<label for="slide-second"></label>
+					<label for="slide-third"></label>
+					<label for="slide-fourth"></label>
+				</div>
+			</div>
+
+			<div class="main-promo-item sale">
+				<p>Скидки 50%</p>
+				<a href="#" class="btn-item">На 350 товаров</a>
+			</div>
+			<div class="main-promo-item delivery">
+				<p>Доставка</p>
+				<a href="#" class="btn-item">Бесплатно</a>
+			</div>			
+		</div>
+	</section>
+	<section class="main-popular">
+		<div class="container">
+			<div class="main-popular-title">
+				<p>Популярные товары:</p>
+				<a href="#" class="btn-popular">Все популярные товары</a>
+			</div>
+			
+			<div class="main-popular-product-block">
+				<div class="main-popular-product new-product">
+					<div class="main-popular-product-buy">
+						<a href="#" class="btn-product-buy">Купить</a>
+						<a href="#" class="btn-product-bookmark">В закладки</a>
+					</div>
+					<img src="img/product-img-1.jpg">
+					<div class="main-popular-product-name">Какая то дрель</div>
+					<div class="main-popular-product-old-price">1488р.</div>
+					<div class="main-popular-product-new-price">228р.</div>
+				</div>
+			
+				<div class="main-popular-product">
+					<div class="main-popular-product-buy">
+						<a href="#" class="btn-product-buy">Купить</a>
+						<a href="#" class="btn-product-bookmark">В закладки</a>
+					</div>
+					<img src="img/product-img-1.jpg">
+					<div class="main-popular-product-name">Какая то дрель</div>
+					<div class="main-popular-product-old-price">1488р.</div>
+					<div class="main-popular-product-new-price">25 500р.</div>
+				</div>
+				
+				<div class="main-popular-product">
+					<div class="main-popular-product-buy">
+						<a href="#" class="btn-product-buy">Купить</a>
+						<a href="#" class="btn-product-bookmark">В закладки</a>
+					</div>
+					<img src="img/product-img-1.jpg">
+					<div class="main-popular-product-name">Какая то дрель</div>
+					<div class="main-popular-product-old-price">1488р.</div>
+					<div class="main-popular-product-new-price">228р.</div>
+				</div>
+				
+				<div class="main-popular-product new-product">
+					<div class="main-popular-product-buy">
+						<a href="#" class="btn-product-buy">Купить</a>
+						<a href="#" class="btn-product-bookmark">В закладки</a>
+					</div>
+					<img src="img/product-img-1.jpg">
+					<div class="main-popular-product-name">Другая дрель</div>
+					<div class="main-popular-product-old-price">1488р.</div>
+					<div class="main-popular-product-new-price">228р.</div>
+				</div>
+			
+			</div>
+			
+			<div class="main-popular-title">
+				<p>Популярные производители:</p>
+				<a href="#" class="btn-popular">Все производители</a>
+			</div>
+			
+			<div class="main-brands">
+				
+				<div class="main-brand brand-bosh">
+					
+				</div>
+				
+				<div class="main-brand brand-bosh">
+					
+				</div>
+				
+				<div class="main-brand brand-bosh">
+					
+				</div>
+				
+				<div class="main-brand brand-bosh">
+					
+				</div>
+				
+				<div class="main-brand brand-bosh">
+					
+				</div>
+				
+				<div class="main-brand brand-bosh">
+					
+				</div>
+				
+				<div class="main-brand brand-bosh">
+					
+				</div>
+				
+				<div class="main-brand brand-bosh">
+					
+				</div>
+						
+			</div>
+			
+		</div>
+		
+	</section>
+	
+	<section class="main-services">
+		<div class="container">
+			<h3>Сервисы</h3>
+			<p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+			<div class="service-index clearfix">
+                 <input type="radio" name="service-name" id="delivery" checked>
+                 <input type="radio" name="service-name" id="garantee">
+                 <input type="radio" name="service-name" id="credit">
+                 <div class="service-control">
+                     <label for="delivery">Доставка</label>
+                     <label for="garantee">Гарантия</label>
+                     <label for="credit">Кредит</label>
+                 </div>
+                 <div class="service-info delivery">
+                     <h4 class="service-info-title">Доставка</h3>
+                     <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
+                     <p>Ведь мы неплохо заработаем, <br>поднимая его на ваш этаж!</p>
+                 </div>
+			     <div class="service-info garantee">
+                     <h4 class="service-info-title">Гарантия</h3>
+                     <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
+                     <p>Дом уж восстановите как-нибудь сами.</p>
+                 </div>
+				 <div class="service-info credit">
+                     <h4 class="service-info-title">Кредит</h3>
+                     <p>Залезть в долговую яму стало проще!</p>
+                     <p>Кредитные консультанты прйдут вам на помощь.</p>
+					 <a href="#" class="btn">Отправить заявку</a>
+                 </div>
+                </div>
+			
+			
+			
+		</div>	
+	</section>
+	<section class="about-us-block clearfix">
+		<div class="container">
+			<div class="about-us our-company">
+				<div class="about-us-title">Компания "Техномаркет"</div>
+				<p>Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+
+				<p>Мы можем доставить ваш товар в самые отдаленные точки России!
+Техномарт работает со многими транспортными компаниями:</p>
+				<ul>
+					<li>Деловые линии</li>
+					<li>Автотрейдинг</li>
+					<li>ЖелДорЭкспедиция</li>
+				</ul>
+				
+				<a href="#" class="btn-about more">Подробне о компании</a>
+			</div>
+			<div class="about-us contacts">
+				<div class="about-us-title">Контакты</div>
+				<p>Вы можете забрать товар сами, заехав к нам в офис:</p>
+				<img src="img/map.png">
+				<a href="#" class="btn-about feedback" id="btn-feedback">Заблудились? Напишиет нам!</a>
+
+			</div>
+		</div>
+		
+	 <div class="modal-feedback close">
+        <form>
+        <div class="modal-name-input">
+            <p>Ваше имя:</p>
+            <input type="text" name="modal-name" placeholder="Представьтесь, пожалуйста" required>
+        </div>
+        <div class="modal-email-input">
+            <p>Ваше e-mail:</p>
+            <input type="text" name="modal-email" placeholder="Для отправки ответа" required>
+        </div>
+        <div class="modal-text-input clearfix">
+            <p>Текст письма:</p>
+            <textarea name="modal-textarea" placeholder="В свободной форме" class="modal-textarea" required></textarea>
+        </div>
+        <div class="modal-buttons">
+            <input type="submit" class="modal-send-btn" value="Отправить">
+            <input type="button" class="modal-cancel-btn" value="Отмена">
+        </div>
+        </form>
+    </div>	
+	</section>
+	<section class="bottom-block clearfix">
+		<div class="container">
+			<div class="bottom-logo">
+				<a href="#"><img src="img/logo-footer.jpg"></a>
+			<div class="bottom-block-contacts">
+                    <p>г. Москва, ул. Строителей, 15</p>
+                    <p>+7 (495) 555-05-55</p>
+            </div>
+			</div>
+			<div class="bottom-nav">
+				<ul class="first-line-list">
+					<li><a href="#">Компания</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<ul class="second-line-list">
+					<li><a href="#">Материалы</a></li>
+					<li><a href="#">Техника</a></li>
+					<li><a href="#">Инстурмент</a></li>
+					<li><a href="#">Спецпредложения</a></li>
+				</ul>
+				
+			</div>
+			
+			
+			
+		</div>
+		
+		
+	</section>
+	<footer class="clearfix">
+		<div class="container">
+			<div class="copiright">
+				© 2010–2013 Компания «Техномарт» Все права защищены				
+			</div>
+			<div class="social-icons">
+			    <a href="#" class="social-icon vk-icon"></a>
+			    <a href="#" class="social-icon fb-icon"></a>
+			    <a href="#" class="social-icon inst-icon"></a>
+			</div>
+			
+			<div class="create">
+				Дизайн сайта — 
+				<a href="#">www.Glukhanko.ru</a>
+			</div>
+			<div class="feedback">
+				Обратная связь: 
+				<a href="#">info@technomart.ru</a>				
+			</div>
+			
+			
+		</div>
+		
+		
+	</footer>
+	
+	<div class="modal-login close">
+		<a href="#" class="modal-login-close"></a>
+		<form>
+		<h3>Войдите на сайт используя свой логин и пароль</h3>
+		<p>Введите логин:</p>
+		<input type="text" name="login" id="login" required>
+		<p>Введите пароль:</p>
+		<input type="password" name="password" required>
+		<a href="#" class="remember-password">Я забыл пароль</a>
+		<input type="submit" class="modal-btn-login" value="Войти">
+		</form>
+	</div>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+	var slideWidth=621;
+$(function(){
+$('.slidewrapper').width($('.slidewrapper').children().size()*slideWidth);
+    var currentSlide=parseInt($('.input-check-slides').data('current'));
+
+    $('#next_slide').click(function(){
+		event.preventDefault();
+        nextSlide();
+        
+    });
+    $('#prev_slide').click(function(){
+		event.preventDefault();
+        prevSlide();
+       
+    });
+    $(".slides").bind("click", function (){
+        var slideNumber = $("input:radio:checked").index(".slides");
+        $('.slidewrapper').animate({left: -slideNumber*slideWidth},slideWidth).data('current',slideNumber); 
+        
+    });
+});
+
+function nextSlide(){
+    var currentSlide=parseInt($('.slidewrapper').data('current'));
+    currentSlide++;
+    if(currentSlide>=$('.slidewrapper').children().size())
+    {
+        currentSlide=0;   
+    }
+    $('.slidewrapper').animate({left: -currentSlide*slideWidth},slideWidth).data('current',currentSlide);
+    var checkSlide = $("input:radio:checked").next(".slides");
+    if($(".slides").is(checkSlide)){
+        $("input:radio:checked").next(".slides").prop({"checked":true});
+        $("input:radio:checked").prev(".slides").prop({"checked":false});
+    }
+    else{
+        $(".slides:first").prop({"checked":true});
+        $(".slides:last").prop({"checked":false});
+    }
+}
+
+function prevSlide(){
+	
+    var currentSlide=parseInt($('.slidewrapper').data('current'));
+    currentSlide--;
+    if(currentSlide<0)
+    {
+        currentSlide=$('.slidewrapper').children().size()-1;   
+    }
+    $('.slidewrapper').animate({left: -currentSlide*slideWidth},slideWidth).data('current',currentSlide);
+    var checkSlide = $("input:radio:checked").prev(".slides");
+    if($(".slides").is(checkSlide)){
+        $("input:radio:checked").next(".slides").prop({"checked":false});
+        $("input:radio:checked").prev(".slides").prop({"checked":true});
+    }
+    else{
+        $(".slides:first").prop({"checked":false});
+        $(".slides:last").prop({"checked":true});
+    }
+    
+}
+
+</script>
+</body>
+</html>
